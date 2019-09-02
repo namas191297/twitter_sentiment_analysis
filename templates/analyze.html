@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter Hashtag Sentiment Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div style="width: 90%; margin: auto; text-align: center">
+    <img src="{{ url_for('static', filename='twitterlogo.png')}}" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 10px">
+    {% if hashtag %}
+    <p style="font-style:italic; size:80px">{{ '#' + hashtag }}</p>
+    {% endif %}
+
+    <h3 style="margin-top: 40px">
+        {% if sentiments %}
+        <b>Polarity:
+            {% if sentiments[0] < 0 %}
+            <span style="color: red">{{ sentiments[0] * -1 }}% negative
+            </span>
+            {% elif sentiments[0] > 0 %}
+            <span style="color: green">{{sentiments[0]}}% positive
+            </span>
+            {% endif %}
+        </b>
+        <b>Subjectivity:
+            <span style="color: green">{{ sentiments[1] }}%
+            </span>
+        </b>
+        {% else %}
+        <b>
+            <span style="color: red">{{ error_message }}
+            </span>
+        </b>
+        {% endif %}
+
+    </h3>
+     <a href="/">Back to Homepage</a>
+</div>
+</body>
+
+</html>
