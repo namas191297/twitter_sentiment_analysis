@@ -25,7 +25,7 @@ The hashtags that are searched  are also stored on the server in a text file wit
 
 You can use the following pip command to download and install these libraries:
 
-    pip install textblob, tweepy, flask, numpy
+    pip install textblob tweepy flask numpy
 
 2. Clone or download the repository and extract it into a folder.
 
