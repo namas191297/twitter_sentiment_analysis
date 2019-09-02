@@ -1,6 +1,6 @@
 # Twitter Sentiment Analysis
 
-![Twitter Sentiment Analysis](twitterlogo.png)
+![Twitter Sentiment Analysis](static/twitterlogo.png)
 
 ```Twitter``` is a microblogging and social networking service on which users post and interact with messages known as "tweets". Twitter is a platform where you can easily share news from everywhere, making it an efficient medium for communication.
 
