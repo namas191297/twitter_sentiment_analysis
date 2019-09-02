@@ -27,7 +27,7 @@ You can use the following pip command to download and install these libraries:
 
     pip install textblob tweepy flask numpy
 
-2. Clone or download the repository and extract it into a folder.
+2. Clone or download the repository and extract it into a folder and open it.
 
 3. The ```tweepy``` library  requires a functioning twitter developer account and an application on developer.twitter.com in order to generate ```consumer key```, ```consumer key secret```, ```access token``` and ```access token secret```. These values are used by tweepy to make twitter API request calls in order to receive the tweets that are analyzed. 
 Refer https://docs.inboundnow.com/guide/create-twitter-application/ to understand how a twitter application can be made. 
